@@ -1,0 +1,137 @@
+/* posición y color del contenido principal */
+#principal {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    background: #FFE3CC;
+    float: none;
+}
+
+/* Formato de la tabla */
+table {
+    font: .9em Roboto, Arial, Helvetica, sans-serif;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Relleno de las columnas de los nombres de los héroes */
+table th {
+    padding: 0 .3em;
+}
+
+/* Color para el título de la tabla */
+table tr {
+    color: #FFFFFF;
+}
+
+/* Color de fondo y relleno del título de la tabla */
+table tr.titulo {
+    background-color: #000000;
+    padding: 0 .3em 0 1.2em;
+}
+
+/* Start colores de fondo de cada clase y espaciado */
+table tr.guerrero {
+  background-color: #2A0A0A;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.picaro {
+  background-color: #848484;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.mago {
+  background-color: #2980b9;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.cazador {
+  background-color: #088A08;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.paladin {
+  background-color: #FFFF00;
+  padding: 0 .3em 0 1.2em;
+
+  /* Color de texxto negro para que se vea bien con el amarillo de fondo */
+  color: #000000;
+}
+
+table tr.druida {
+  background-color: #FF8000;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.brujo {
+  background-color: #240B3B;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.chaman {
+  background-color: #0404B4;
+  padding: 0 .3em 0 1.2em;
+}
+
+table tr.sacerdote {
+  background-color: #FFFFFF;
+  padding: 0 .3em 0 1.2em;
+  /* Color de texxto negro para que se vea bien con el amarillo de fondo */
+  color: #000000;
+}
+/* End colores de fondo de cada clase y espaciado */
+
+/* Bordeado de toda la tabla */
+table th, table, td {
+  border: 1px solid #333;
+  line-height: 2em;
+}
+
+/* Efecto sobreado color oro para todos las filas */
+table tr:hover {
+  box-shadow: 1px 1px 25px gold;
+  -webkit-box-shadow: 1px 1px 25px gold;
+  -moz-box-shadow: 1px 1px 25px gold;
+}
+
+/* Color blanco para los "enlaces" de los nombres de los héroes */
+tr a {
+    color: #FFF;
+}
+
+/* Color negro para los enlaces de paladín y sacerdote */
+.sacerdote a, .paladin a {
+    color: #000;
+}
+
+/* Posición de las cartas de los héroes */
+a.flama {
+    position: relative;
+}
+
+/* Posición de las imagenes, para que salgan arriba de los enlaces */
+a.flama img {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    display: none;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+/* mostramos la imagen al hacer hover en el enlace */
+a.flama:hover img {
+    display: block;
+}
+
+/* Reducimos tamaño del gif del principio */
+.varian {
+    width: 60%;
+}

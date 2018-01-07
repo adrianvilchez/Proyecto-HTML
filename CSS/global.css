@@ -1,0 +1,516 @@
+/* Formato general para todos los textos que estamos usando en el body */
+body p, h3, h1, h2, ul, table {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Div que contiene todo el body, tamaño 100% de la página, ajustado con color
+    de fondo y posicion absoluta */
+#contenedor_principal {
+    width: 100%;
+    margin: 0px auto;
+    text-align: left;
+    background-color: #0a1517;
+    position: absolute;
+}
+
+/* Div que contiene los iconos de las redes sociales los ajustamos y le damos
+   un tamaño para que quede centrado */
+#cabecera {
+    width: 80%;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    float: left;
+}
+
+/* Damos el tamaño al div y lo ajustamos a la página para que quede centrado*/
+#imagen_cabecera {
+    width: 80%;
+    float: left;
+
+    /* fijamos la posición para que al hacer scroll desaparezca */
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: -20%;
+}
+
+/* Ajustamos la imagen de la cabecera a su div*/
+.background_cabecera {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -5%;
+    height: auto;
+}
+
+.social {
+    margin-top: 20%;
+    float: right;
+    position: static;
+    background: rgba(3,3,3,.5);
+    padding: 10px;
+    width: 10%;
+}
+
+/* Start Menú horizontal */
+/* Div del menu, posición del menú, tamaño, color de fondo y texto en reposo */
+#menu {
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    float: left;
+    background: #000;
+    color: #B5C4E3;
+    /* Borde en verdoso el marco inferior del menú */
+    border-bottom: solid 3px #0a1517;
+}
+
+/* Quitamos el estilo, centramos el texto, y ponemos la lista en horizontal */
+#menu li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+/* Cambiamos el fondo de la lista a blanco al hacer hover y aumentamos un poco el tamaño */
+#menu li:hover {
+    background: #FFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Aumentamos el tamaño del enlace de las listas y cambiamos el color */
+#menu li a {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #B5C4E3;
+}
+
+/* Cambiamos el color del enlace de la lista a blanco al hacer hover */
+#menu li a:hover {
+    color: #000;
+}
+
+
+/*#menu li a:focus, a:active {
+    background-color: #272a2b;
+    color: #FFF;
+}*/
+
+/* Cambiamos el color del menú activo a grisáceo */
+#menu .seleccionado {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #272a2b;
+    color: #FFF;
+}
+
+/* El color de fondo del menú seleccionado se mantiene al hacer hover
+   y cambiamos el color del enlace a blanco puro para resaltarlo */
+#menu .seleccionado a:hover {
+    background-color: #272a2b;
+    color: #FFF;
+}
+/* End Menú horizontal */
+
+/* Eliminamos la decoración de los enlaces (el subrayado)*/
+a:link
+{
+    text-decoration:none;
+}
+
+/* Contenedor que contiene principal, todo el contenido "real"
+    dimensiones, posicion, alineacion de texto, fondo y márgenes*/
+#contenedor_secundario {
+    position: relative;
+    width: 80%;
+    margin: 0px auto;
+    text-align: left;
+    background-color: #0f0f0f;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: right;
+}
+
+/* Dimensiones y márgenes del pie, posición y fondo */
+#pie {
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    clear: both;
+    position: relative;
+    background:#000000;
+
+    /* Borde superior verdoso */
+    border-top: solid 3px #0a1517;
+}
+
+/* Color del texto del pie y posición */
+#pie  p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Posición y dimensiones del icono de subir */
+#subir {
+    float: right;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
+/* Efecto de sombra naranja cuando se p */
+#subir img:active {
+    box-shadow: 1px 1px 50px orange;
+    -webkit-box-shadow: 1px 1px 50px orange;
+    -moz-box-shadow: 1px 1px 50px orange;
+}
+
+/* Efecto de rotación al hacer hover en el icono de subir */
+#subir img:hover {
+    -webkit-animation: rotar 1.5s;
+}
+/* Funcion para rotar 360 grados a la izquierda */
+@-webkit-keyframes rotar {
+    100% { -webkit-transform: rotate(-360deg); }
+}
+
+/* Tamaño y ajustes del logo de facebook */
+.facebook img {
+    width: 45%;
+    max-width: 100%;
+    display:block;
+    margin: auto;
+    float: left;
+}
+
+/* Tamaño y ajustes del logo de twitter */
+.twitter img {
+    width: 45%;
+    max-width: 100%;
+    display:block;
+    margin: auto;
+    float: right;
+}
+
+/* Start efectos de las etiquetas e imagenes que contienen las etiquetas de
+    texto "h1" */
+#principal h1 {
+  font-size: 1.6em !important;
+  padding-top: 30px;
+  height: 40px;
+  border-bottom: solid #2980b9;
+}
+
+/* Start efectos de las imagenes que contienen las etiquetas de texto "h1" */
+#principal h1 img {
+    vertical-align: top !important;
+    border: 2px solid #16416F;
+    margin-top: -24px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    margin-left: -24px;
+    box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+}
+
+#principal h1 img:hover {
+    border: 2px solid #2980b9;
+    box-shadow: 1px 1px 25px #2980b9;
+    -webkit-box-shadow: 1px 1px 25px #2980b9;
+    -moz-box-shadow: 1px 1px 25px #2980b9;
+}
+/* End efectos de las etiquetas e imagenes que contienen las etiquetas de
+    texto "h1" */
+
+/* Start efectos de las etiquetas e imagenes que contienen las etiquetas de
+   texto "h2" */
+#principal h2 {
+  padding-top: 40px;
+  height: 40px;
+  border-bottom: solid orange;
+}
+
+#principal h2 img {
+    vertical-align: top !important;
+    border: 2px solid orange;
+    margin-top: -24px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    margin-left: -20px;
+    box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+}
+
+#principal h2 img:hover {
+    border: 2px solid #FFC91D;
+    box-shadow: 1px 1px 25px #FFC91D;
+    -webkit-box-shadow: 1px 1px 25px #FFC91D;
+    -moz-box-shadow: 1px 1px 25px #FFC91D;
+}
+/* End efectos de las etiquetas e imagenes que contienen las etiquetas de
+   texto "h2" */
+
+/* Start efectos de las etiquetas e imagenes que contienen las etiquetas de
+    texto "h3" */
+#principal h3 {
+  padding-top: 40px;
+  height: 35px;
+  border-bottom: solid #9065A3;
+}
+
+#principal h3 img {
+    vertical-align: top !important;
+    border: 2px solid #9065A3;
+    margin-top: -24px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    margin-left: -15px;
+    box-shadow: 0px 0px 10px #000;
+    -moz-box-shadow: 0px 0px 10px #000;
+    -webkit-box-shadow: 0px 0px 10px #000;
+}
+
+#principal h3 img:hover {
+    border: 2px solid #9065A3;
+    box-shadow: 1px 1px 25px #9065A3;
+    -webkit-box-shadow: 1px 1px 25px #9065A3;
+    -moz-box-shadow: 1px 1px 25px #9065A3;
+}
+/* End efectos de las etiquetas e imagenes que contienen las etiquetas de
+    texto "h3" */
+
+/* Tamaño y efectos de la mayoría de las imágenes de la web */
+.aligncenter {
+    max-width: 100%;
+    display:block;
+    /* Centramos las imaágenes */
+    margin: auto;
+
+    /* Borde similar a negro para las imágenes */
+    border: 2px solid #0f0f0f;
+
+    /* Efecto de sombreado para las imágenes, del mismo color que el borde */
+    box-shadow: 5px 5px 10px #0f0f0f;
+    -webkit-box-shadow: 5px 5px 10px #0f0f0f;
+    -moz-box-shadow: 5px 5px 10px #0f0f0f;
+}
+
+/* Tamaño y ajuste del logo del pie */
+.senia {
+    max-width: 100%;
+    display:block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+
+
+
+/* Menú lateral */
+#StickyNavigation{
+    position:fixed;
+    top:47px;
+    left:0;
+    margin:auto;
+    right:0;
+    color:#fff;
+    z-index:11;
+    width:100%;
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    transform:translateY(0);
+    transition:width .15s ease-out,opacity .25s ease-out,-webkit-transform .25s ease-out;
+    transition:width .15s ease-out,transform .25s ease-out,opacity .25s ease-out;
+    transition:width .15s ease-out,transform .25s ease-out,opacity .25s ease-out,-webkit-transform .25s ease-out
+}
+
+@media (min-width:60em){
+    /* Posición del div */
+    #StickyNavigation{
+        top:50%;
+        -webkit-transform:translate3d(0,-50%,0);
+        transform:translate3d(0,-50%,0);
+        margin:auto;
+        width:100px;
+        height:50%;
+        left:auto
+    }
+}
+
+/* Desplegable al hacer hover al menu */
+#StickyNavigation:hover{
+    width:auto
+}
+
+/* Menu lista vertical para las anclas, hacer que el texto sobresalga al hacer hover*/
+#StickyNavigation:hover li .StickyNav-Text{
+    opacity:1;
+    -webkit-transform:translateZ(0);
+    transform:translateZs(0)
+}
+
+/* Disponer el menu vertical (bloque) y centrarlo*/
+#StickyNavigation li{
+    position:relative;
+    text-align:center;
+    display:inline-block
+}
+@media (min-width:60em){
+    #StickyNavigation li{
+        display:block;
+        text-align:right;
+        margin:20px 0;
+        height:30px
+    }
+}
+
+/* Posicion del texto del menu */
+/*#StickyNavigation li.active .StickyNav-Text{
+    position:relative
+}*/
+
+/*#StickyNavigation li.active .StickyNav-Text .TextLine{
+    width:100%
+}*/
+
+/* Cambio del color del texto al hacer hover sobre él y quitar estilo del enlace */
+#StickyNavigation li:hover .StickyNav-Text{
+    text-decoration:none;
+    color:#fff
+}
+
+/* Icono azul pequeño al hacer hover */
+#StickyNavigation li:hover .StickyNav-Icon:after{
+    opacity:1
+}
+
+/* Texto activo del menu */
+#StickyNavigation li.active .StickyNav-Text{
+    color:#fff;
+    text-decoration:none
+}
+
+/* Icono activo del menu */
+#StickyNavigation li.active .StickyNav-Icon:before{
+    opacity:1
+}
+
+/* Altura del menú de navegación */
+#StickyNavigation .Navigation-list{
+    position:relative;
+    padding:0;
+    z-index:5;
+    width:100%;
+    margin:0;
+    display:none
+}
+
+@media (min-width:60em){
+    #StickyNavigation .Navigation-list{
+        top:50%;
+        -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%)
+    }
+}
+
+/* Estilo del texto desplegable del menu */
+#StickyNavigation .StickyNav-Text{
+    display:inline-block;
+    position:relative;
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+    line-height:1.25em;
+    font-family:Roboto, Belwe Bold,BlizzBanguiat,PSL Asadong Pro,Bliz Quadrata,Hiragino Kaku Gothic Pro,Hiragino Kaku Gothic ProN W3,Osaka,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³\ ï¼°ã‚´ã‚·ãƒƒã‚¯,Siara,Times New Roman,Serif,Tahoma,Sans-serif;
+    font-size:16px;
+    color:#cecece;
+    transition:color .15s ease-out;
+    text-shadow:1px 1px #000;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased
+}
+
+/* Posición del texto del menu (izquierda), hacer que aparezca a la izquierda */
+@media (min-width:60em){
+    #StickyNavigation .StickyNav-Text{
+        display:block;
+        opacity:0;
+        -webkit-transform:translate3d(-7px,0,0);
+        transform:translate3d(-7px,0,0);
+        transition:color .15s ease-out,-webkit-transform .25s ease-out;
+        transition:transform .25s ease-out,color .15s ease-out;
+        transition:transform .25s ease-out,color .15s ease-out,-webkit-transform .25s ease-out;
+        top:8px;
+        padding-right:85px
+    }
+    /*#StickyNavigation .StickyNav-Text:before{
+        display:none
+    }*/
+}
+
+/* Iconos grises del sprite, ruta, tamaño y posiciones */
+#StickyNavigation .StickyNav-Icon{
+    background:url(../IMAGENES/sprites-menu-lateral.png) -10px -10px;
+    width:40px;
+    height:40px;
+    position:absolute;
+    right:25px;
+    top:0;
+    display:none
+}
+@media (min-width:60em){
+    #StickyNavigation .StickyNav-Icon{
+        display:block
+    }
+}
+
+/* Icono grande del sprite, ruta, tamaño y posiciones */
+#StickyNavigation .StickyNav-Icon:after,#StickyNavigation .StickyNav-Icon:before{
+    content:"";
+    background:url(../IMAGENES/sprites-menu-lateral.png) -70px -10px;
+    width:40px;
+    height:40px;
+    opacity:0;
+    transition:opacity .15s ease-out;
+    position:absolute;
+    top:-1px;
+    left:0;
+    z-index:2
+}
+/* Tomar la posición del sprite gris */
+#StickyNavigation .StickyNav-Icon:after{
+    background-position:-10px -70px
+}

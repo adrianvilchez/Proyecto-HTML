@@ -1,0 +1,35 @@
+/* posición y color del contenido principal */
+#principal {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    background: #FFE3CC;
+    float: none;
+}
+
+/* Imagen principal, reduciendo su tamaño y dándole efecto y posicionándola */
+.meta-imagen {
+    max-width: 80%;
+    display:block;
+    margin: auto;
+
+    border: 2px solid #0f0f0f;
+    box-shadow: 5px 5px 10px #0f0f0f;
+    -webkit-box-shadow: 5px 5px 10px #0f0f0f;
+    -moz-box-shadow: 5px 5px 10px #0f0f0f;
+}
+
+/* imagen de la sección druida jade, dandole efecto y aumentando su tamaño y posicionándola */
+.jade {
+    width: 150%;
+    max-width: 80%;
+    display:block;
+    margin: auto;
+
+    border: 2px solid #0f0f0f;
+    box-shadow: 5px 5px 10px #0f0f0f;
+    -webkit-box-shadow: 5px 5px 10px #0f0f0f;
+    -moz-box-shadow: 5px 5px 10px #0f0f0f;
+}
