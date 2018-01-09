@@ -1,0 +1,43 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="es" />
+
+        <meta name="copyright" content="Design/Code: Adrián Vílchez; e-mail: avilchez758@gmail.com" />
+
+        <title>Pantallazo de la muerte</title>
+
+        <link rel="icon" type="image/png" href="../favicon.png" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="../css/windows.css" />
+    </head>
+
+    <body>
+        <div id="windows">
+            <script type="text/javascript">
+                /* Función para reproducir el sonido de error de windows*/
+                function win1() {
+                    /* Creamos la variable error y obtenemos el primer valor del tag
+                     "<audio>" */
+                    var error = document.getElementsByTagName("audio")[0];
+                    /* Reproducimos el sonido */
+                    error.play();
+
+                    /* Pasados 750 milésimas de segundo cerramos la venta que abrimos
+                    en la línia 96 del documento "index.html" */
+                    setTimeout("self.close()", 750);
+                }
+
+                /* Cargamos la función "win1" al cargar la página */
+                window.onload = win1;
+            </script>
+
+            <a class="bla" href="javascript:void(0);"><img class="muerte" src="../imagenes/muerte.jpg" alt=""/></a>
+
+            <audio>
+                <source src="../musica/error.mp4"></source>
+            </audio>
+        <div>
+    </body>
+</html>

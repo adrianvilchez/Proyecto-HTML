@@ -53,12 +53,12 @@ function calcular() {
 // Start Funciones Brian Gordo
 function cambiarImagen() {
    /* Establecemos la imagen de Brian Gordo */
-    this.setAttribute('src','../IMAGENES/brihan.png');
+    this.setAttribute('src','../imagenes/brihan.png');
 };
 
 function imagenIniciar() {
     /* Establecemos la imagen del dorso */
-    this.setAttribute('src',"../IMAGENES/dorso.png");
+    this.setAttribute('src',"../imagenes/dorso.png");
 };
 // End Funciones Brian Gordo
 
