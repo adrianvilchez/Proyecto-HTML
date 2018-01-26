@@ -483,7 +483,7 @@ a:link
 
 /* Iconos grises del sprite, ruta, tamaño y posiciones */
 #StickyNavigation .StickyNav-Icon{
-    background:url(../IMAGENES/sprites-menu-lateral.png) -10px -10px;
+    background:url(../imagenes/sprites-menu-lateral.png) -10px -10px;
     width:40px;
     height:40px;
     position:absolute;
@@ -500,7 +500,7 @@ a:link
 /* Icono grande del sprite, ruta, tamaño y posiciones */
 #StickyNavigation .StickyNav-Icon:after,#StickyNavigation .StickyNav-Icon:before{
     content:"";
-    background:url(../IMAGENES/sprites-menu-lateral.png) -70px -10px;
+    background:url(../imagenes/sprites-menu-lateral.png) -70px -10px;
     width:40px;
     height:40px;
     opacity:0;
