@@ -1,0 +1,345 @@
+/* Color de fondo en todo el documento html */
+html {
+    background-color: #0a1517;
+}
+
+/* Formato general para todos los textos que estamos usando en el body */
+body p, h3, h1, h2, ul, table {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/* Eliminamos la decoración de los enlaces (el subrayado)*/
+a:link
+{
+    text-decoration:none;
+}
+
+/* Div que contiene los iconos de las redes sociales los ajustamos y le damos
+   un tamaño para que quede centrado */
+
+/* Requerimos el uso de este div, para sistir en cuanto a las dimensiones
+   al fondo de cabecera que estará en "position: fixed;" */
+#tamaño_cabecera {
+    width: 1400px;
+    height: 450px;
+    margin: 0 auto 20px auto;
+}
+
+/* hacemos que la imagen desaparezca bajo el contenido al hacer scroll, también
+   a subimos 30 píxeles la imagen */
+#posicion_cabecera {
+    position: fixed;
+    margin-top: -30px;
+}
+
+/* Damos a la imágen un tamaño de 1200px para que quede centrada */
+.background_cabecera {
+    width: 1400px;
+}
+
+/* Start Menú horizontal */
+/* Div del menu, posición del menú, tamaño, color de fondo y texto en reposo */
+#barra_menu {
+    position: relative;
+    width: 1400px;
+    height: 55px;
+    margin: 0 auto;
+
+    background: #000;
+    color: #B5C4E3;
+    /* Borde en verdoso el marco inferior del menú */
+    border-bottom: solid 3px #0a1517;
+}
+
+#menu {
+    float: left;
+    position: relative;
+}
+
+/* Quitamos el estilo, centramos el texto, y ponemos la lista en horizontal */
+#menu li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+/* Cambiamos el fondo de la lista a blanco al hacer hover y aumentamos un poco el tamaño */
+#menu li:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #FFF;
+}
+
+/* Aumentamos el tamaño del enlace de las listas y cambiamos el color */
+#menu li a {
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #B5C4E3;
+}
+
+/* Cambiamos el color del enlace de la lista a blanco al hacer hover */
+#menu li a:hover {
+    color: #000;
+}
+
+/* Cambiamos el color del menú activo a grisáceo */
+#menu .seleccionado {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #272a2b;
+    color: #FFF;
+}
+
+/* El color de fondo del menú seleccionado se mantiene al hacer hover
+   y cambiamos el color del enlace a blanco puro para resaltarlo */
+#menu .seleccionado a:hover {
+    background-color: #272a2b;
+    color: #FFF;
+}
+/* End Menú horizontal */
+
+/* div que contiene los iconos de facebook */
+#redes_sociales {
+    position: relative;
+    background: rgba(3,3,3,.5);
+    width: auto;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Tamaño y ajustes del logo de facebook  y twitter */
+.facebook img {
+    width: 40px;
+    float: left;
+    /* Separamos 15 píxeles los logos */
+    margin-right: 15px;
+}
+
+.twitter img {
+    width: 40px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+/* Contenedor que contiene principal, todo el contenido "real"
+    dimensiones, posicion, alineacion de texto, fondo y márgenes*/
+#contenedor_principal {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 1px;
+    width: 1400px;
+    height: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #0f0f0f;
+}
+
+/* posición y color del contenido principal (parte de la izquierda) */
+#horca {
+    float: left;
+    width: 740px;
+    height: 700px;
+    margin-top: 17px;
+    margin-left: 75px;
+    margin-right: 10px;
+    background-image: url("../imagenes/predator/predator-forest.jpg");
+}
+
+#soga {
+    display: block;
+    margin-left: 450px;
+    margin-top: 40px;
+}
+
+#clavoizq {
+    display: block;
+    margin-left: 448px;
+    margin-top: -172px;
+}
+
+#clavoder {
+    display: block;
+    margin-left: 467px;
+    margin-top: -26px;
+}
+
+#cabeza {
+    display: block;
+    margin-left: 440px;
+    margin-top: 108px;
+}
+
+#torso {
+    display: block;
+    margin-left: 447.6px;
+    margin-top: -48.4px;
+}
+
+#bizquierdo {
+    display: block;
+    margin-left: 405px;
+    margin-top: -101px;
+}
+
+#bderecho {
+    display: block;
+    margin-left: 503.5px;
+    margin-top: -172px;
+}
+
+#pizquierda {
+    display: block;
+    margin-left: 425px;
+    margin-top: -62px;
+}
+
+#pderecha {
+    display: block;
+    margin-left: 477.4px;
+    margin-top: -186px;
+}
+
+#paquete {
+    position: absolute;
+    margin-left: 462px;
+    margin-top: -187px;
+}
+#pad {
+    float: right;
+    /*background-color: #FFE3CC;*/
+    background-image: url("../imagenes/predator/camuflaje.png");
+    width: 500px;
+    margin-top: 17px;
+    margin-right: 75px;
+    height: 700px;
+}
+
+#abecedario {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#entrada {
+    position: relative;
+    /*background-color: #696665;*/
+    background-image: url("../imagenes/predator/camuflaje.png");
+    width: 1400px;
+    height: 150px;
+    margin: 0 auto;
+    border-top: solid 3px #0a1517;
+}
+
+#formulario {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+input {
+    margin-top: 38px;
+}
+
+#empezar {
+    width: 200px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+#abecedario button {
+    margin: 5px auto;
+    width: 70px;
+    height: 70px;
+}
+
+#abecedario #rendirse {
+  width: 220px;
+  height: 70px;
+}
+
+#winlos {
+    display: block;
+    position: fixed;
+    left: 700px;
+    top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#pie {
+    position: relative;
+    clear: both;
+    width: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    background:#000000;
+    border-top: solid 3px #0a1517;
+}
+
+#logo {
+    margin: 0 auto;
+    width: 400px;
+}
+
+/* Color del texto del pie y posición */
+#pie  p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Tamaño y ajuste del logo del pie */
+.senia {
+    max-width: 100%;
+    display:block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+/* Posición y dimensiones del icono de subir */
+#subir {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
+/* Efecto de sombra naranja cuando se p */
+#subir img:active {
+    box-shadow: 1px 1px 50px purple;
+    -webkit-box-shadow: 1px 1px 50px purple;
+    -moz-box-shadow: 1px 1px 50px purple;
+}
+
+/* Efecto de rotación al hacer hover en el icono de subir */
+#subir img:hover {
+    -webkit-animation: rotar 1.5s;
+}
+/* Funcion para rotar 360 grados a la izquierda */
+@-webkit-keyframes rotar {
+    100% { -webkit-transform: rotate(-360deg); }
+}

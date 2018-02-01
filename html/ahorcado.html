@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="es" />
+
+        <meta name="copyright" content="Design/Code: Adrián Vílchez; e-mail: avilchez758@gmail.com" />
+
+        <title>Ahorcado</title>
+
+        <link rel="icon" type="image/png" href="../ahorcado-favicon.png" />
+        <link rel="stylesheet" media="screen,projection" type="text/css" href="../css/ahorcado.css" />
+        <!-- <link rel="stylesheet" media="screen,projection" type="text/css" href="../css/global.css" /> -->
+
+        <script type="text/javascript" src="../javascript/ahorcado.js"></script>
+        <script type="text/javascript" src="../javascript/subir.js"></script>
+    </head>
+
+    <body>
+        <!-- Bloque que contiene la imagen de la cabecera -->
+        <div id="tamaño_cabecera">
+            <div id="posicion_cabecera">
+                <img class="background_cabecera" src="../imagenes/predator/arbol-ahorcado.jpg" alt=""/>
+            </div>
+        </div>
+
+        <!-- Bloque que contiene el menú -->
+        <div id="barra_menu">
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="modalidades.html">Modalidades</a></li>
+                    <li><a href="heroes.html">Héroes</a></li>
+                    <li><a href="meta.html">Meta</a></li>
+                    <li class="seleccionado"><a href="#">Ahorcado</a></li>
+                </ul>
+            </div>
+
+            <!-- Bloque que contiene los iconos de las redes sociales -->
+            <div id="redes_sociales">
+                <a title="Facebook" class="facebook" href="https://facebook.com/" target="_blank"><img src="../imagenes/icon-facebook3.png" alt=""/></a>
+                <a title="Twitter" class="twitter" href="https://twitter.com/" target="_blank"><img src="../imagenes/icon-twitter.png" alt=""/></a>
+            </div>
+        </div>
+
+        <!-- Bloque que contiene los dos contenidos (principal y secundario) -->
+        <div id="contenedor_principal">
+            <!-- Bloque que contiene el formulario y las curiosidades -->
+            <div id="horca">
+                <img id="soga" src="../imagenes/predator/soga.png" alt="" width="59" height="179">
+                <img id="clavoizq" src="../imagenes/predator/clavo.png" width="15" height="15" alt="">
+                <img id="clavoder" src="../imagenes/predator/clavo.png" width="15" height="15" alt="">
+                <img id="cabeza" src="" alt="">
+                <img id="torso" src="" alt="">
+                <img id="bizquierdo" src="" alt="">
+                <img id="bderecho" src="" alt="">
+                <img id="pizquierda" src="" alt="">
+                <img id="pderecha" src="" alt="">
+                <img id="paquete" src="" alt="">
+            </div>
+
+            <!-- Bloque que contiene el contenido principal -->
+            <div id="pad">
+                <div id="abecedario">
+                    <button type="button" name="A" id="A" onclick="botonActivo('A');">A</button>
+                    <button type="button" name="B" id="B" onclick="botonActivo('B');">B</button>
+                    <button type="button" name="C" id="C" onclick="botonActivo('C');">C</button>
+                    <button type="button" name="D" id="D" onclick="botonActivo('D');">D</button>
+                    <button type="button" name="E" id="E" onclick="botonActivo('E');">E</button>
+                    <br>
+                    <button type="button" name="F" id="F" onclick="botonActivo('F');">F</button>
+                    <button type="button" name="G" id="G" onclick="botonActivo('G');">G</button>
+                    <button type="button" name="H" id="H" onclick="botonActivo('H');">H</button>
+                    <button type="button" name="I" id="I" onclick="botonActivo('I');">I</button>
+                    <button type="button" name="J" id="J" onclick="botonActivo('J');">J</button>
+                    <br>
+                    <button type="button" name="K" id="K" onclick="botonActivo('K');">K</button>
+                    <button type="button" name="L" id="L" onclick="botonActivo('L');">L</button>
+                    <button type="button" name="M" id="M" onclick="botonActivo('M');">M</button>
+                    <button type="button" name="N" id="N" onclick="botonActivo('N');">N</button>
+                    <button type="button" name="Ñ" id="Ñ" onclick="botonActivo('Ñ');">Ñ</button>
+                    <br>
+                    <button type="button" name="O" id="O" onclick="botonActivo('O');">O</button>
+                    <button type="button" name="P" id="P" onclick="botonActivo('P');">P</button>
+                    <button type="button" name="Q" id="Q" onclick="botonActivo('Q');">Q</button>
+                    <button type="button" name="R" id="R" onclick="botonActivo('R');">R</button>
+                    <button type="button" name="S" id="S" onclick="botonActivo('S');">S</button>
+                    <br>
+                    <button type="button" name="T" id="T" onclick="botonActivo('T');">T</button>
+                    <button type="button" name="U" id="U" onclick="botonActivo('U');">U</button>
+                    <button type="button" name="V" id="V" onclick="botonActivo('V');">V</button>
+                    <button type="button" name="W" id="W" onclick="botonActivo('W');">W</button>
+                    <button type="button" name="X" id="X" onclick="botonActivo('X');">X</button>
+                    <br>
+                    <button type="button" name="Y" id="Y" onclick="botonActivo('Y');">Y</button>
+                    <button type="button" name="Z" id="Z" onclick="botonActivo('Z');">Z</button>
+                    <button type="button" name="0" id="0" onclick="botonActivo('0');">0</button>
+                    <button type="button" name="1" id="1" onclick="botonActivo('1');">1</button>
+                    <button type="button" name="2" id="2" onclick="botonActivo('2');">2</button>
+                    <br>
+                    <button type="button" name="3" id="3" onclick="botonActivo('3');">3</button>
+                    <button type="button" name="4" id="4" onclick="botonActivo('4');">4</button>
+                    <button type="button" name="5" id="5" onclick="botonActivo('5');">5</button>
+                    <button type="button" name="6" id="6" onclick="botonActivo('6');">6</button>
+                    <button type="button" name="7" id="7" onclick="botonActivo('7');">7</button>
+                    <br>
+                    <button type="button" name="8" id="8" onclick="botonActivo('8');">8</button>
+                    <button type="button" name="9" id="9" onclick="botonActivo('9');">9</button>
+                    <button type="button" name="rendirse" id="rendirse" onclick="rendirse();">Rendirse</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="entrada">
+            <form id="formulario" action="index.html" method="post">
+                <!-- <button type="button" name="Jugar" id="empezar" onclick="crearPeliculas();">Jugar</button> -->
+            </form>
+
+            <!-- <div id="empezar">
+
+            </div> -->
+        </div>
+
+        <!-- Sonido ambiental de fondo, Selva -->
+        <audio loop="true">
+            <source src="../musica/predator-forest"></source>
+        </audio>
+
+        <!-- Sonido que se reproduce cuando se falla -->
+        <audio>
+            <source src="../musica/predator-sound"></source>
+        </audio>
+
+        <!-- Sonido que se reproduce cuando se acierta-->
+        <audio>
+            <source src="../musica/moneda.mp3"></source>
+        </audio>
+
+        <!-- Sonido que se reproduce cuando se gana-->
+        <audio>
+            <source src="../musica/ganar.mp3"></source>
+        </audio>
+
+        <!-- Sonido que se reproduce cuando se pierde-->
+        <audio>
+            <!-- <source src="../musica/perder.mp3"></source> -->
+            <source src="../musica/risa.mp3"></source>
+        </audio>
+
+
+        <div id="resultado">
+            <img id="winlos" src="" alt="">
+        </div>
+
+        <!-- Bloque que contiene el icono de subir -->
+        <div id="subir">
+            <!-- Llamamos a la funcion "subir()" que contiene "scripts.js" al hacer click -->
+            <a href="#" onclick='subir(); return false'>
+                <img src="../imagenes/predator/ahorcado.png" width="100" height="100" alt="Subir"/>
+            </a>
+        </div>
+
+        <!-- Bloque que contiene el pie -->
+        <div id="pie">
+            <div id="logo">
+                <a href="http://ieslasenia.es/www/" target="_blank"><img class="senia" src="../imagenes/lasenia.png" alt=""/></a>
+            </div>
+            <p>Copyright © 2017 Proyecto HTML de la asignatura Aplicaciones web.<acronym title="Sistemas Microinformáticos y Redes">2ºSMX</acronym></p>
+        </div>
+    </body>
+</html>
